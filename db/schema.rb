@@ -13,19 +13,19 @@
 ActiveRecord::Schema.define(version: 2021_04_19_193217) do
 
   create_table "characters", force: :cascade do |t|
-    t.string "attribute"
+    t.string "character"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "episode_numbers", force: :cascade do |t|
-    t.string "attribute"
+    t.integer "episode_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "quotes", force: :cascade do |t|
-    t.string "attribute"
+    t.string "quote"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
